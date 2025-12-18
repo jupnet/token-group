@@ -17,10 +17,10 @@ test-sbf = []
 solana-program = { git = "https://github.com/jupnet/jupnet-sdk" }
 solana-program-error = { git = "https://github.com/jupnet/jupnet-sdk" }
 solana-system-interface = { git = "https://github.com/jupnet/jupnet-sdk" }
-spl-pod = { git = "https://github.com/jupnet/libraries", branch = "jupnet" }
+spl-pod = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
 # spl-token-2022 = { version = "9.0.0", features = ["no-entrypoint"] }
 spl-token-group-interface = { path = "../interface" }
-spl-type-length-value = { git = "https://github.com/jupnet/libraries", branch = "jupnet" }
+spl-type-length-value = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
 
 [dev-dependencies]
 solana-program-test = "2.3.4"
