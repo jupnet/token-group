@@ -3,8 +3,6 @@
 use {
     crate::processor,
     solana_program::{account_info::AccountInfo, entrypoint::ProgramResult, pubkey::Pubkey},
-    solana_program_error::PrintProgramError,
-    spl_token_group_interface::error::TokenGroupError,
 };
 
 solana_program::entrypoint!(process_instruction);
@@ -13,9 +11,5 @@ fn process_instruction(
     accounts: &[AccountInfo],
     instruction_data: &[u8],
 ) -> ProgramResult {
-    if let Err(error) = processor::process(program_id, accounts, instruction_data) {
-        error.print::<TokenGroupError>();
-        return Err(error);
-    }
-    Ok(())
+    processor::process(program_id, accounts, instruction_data)
 }

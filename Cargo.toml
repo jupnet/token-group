@@ -37,6 +37,23 @@ tag-message = "Publish {{crate_name}} v{{version}}"
 consolidate-commits = false
 
 [patch.crates-io]
+# SPL libraries
 spl-pod = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
 spl-discriminator = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
 spl-type-length-value = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
+spl-tlv-account-resolution = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
+spl-program-error = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
+spl-token-2022 = { git = "https://github.com/jupnet/token-2022", branch = "fix/sdk-deps" }
+
+# Solana SDK crates
+solana-account-info = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-cpi = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-instruction = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-msg = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-entrypoint = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-error = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-memory = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-option = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-pack = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-pubkey = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
