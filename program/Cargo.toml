@@ -14,13 +14,13 @@ no-entrypoint = []
 test-sbf = []
 
 [dependencies]
-solana-program = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-program-error = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-system-interface = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-spl-pod = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
-spl-token-2022 = { git = "https://github.com/jupnet/token-2022", branch = "fix/sdk-deps", features = ["no-entrypoint"] }
+solana-program = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-program-error = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-system-interface = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+spl-pod = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps-test" }
+spl-token-2022 = { git = "https://github.com/jupnet/token-2022", branch = "fix/sdk-deps-test", features = ["no-entrypoint"] }
 spl-token-group-interface = { path = "../interface" }
-spl-type-length-value = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
+spl-type-length-value = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps-test" }
 
 [dev-dependencies]
 solana-program-test = "2.3.4"
